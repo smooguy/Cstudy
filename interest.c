@@ -13,7 +13,7 @@ int main(void)
 	double CompoundSum = principal;
 	int year;
 
-	puts("원금은 $100입니다. 단리는 10%, 복리는 5%입니다.");
+	puts("원금은 $100입니다. 단리는 10%, 복리는 5%입니다."); //puts함수는 %기호를 나타낼때 그냥써도 된다. printf는 %%해줘야 한다.
 	for(year = 0; SimpleSum >= CompoundSum ; year++ )
 	{
 		CompoundSum += CompoundSum * COMPOUND; //작년치 누계된 저축금의 5%증감. 복리.
